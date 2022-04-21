@@ -16,7 +16,7 @@ MAIN PAGE ↓
 FEATURES PAGE ↓
 ![features](https://user-images.githubusercontent.com/100978682/164456062-a9d96ee7-ab83-45ca-ab8e-8e92bb641e23.jpg)
 ABOUT PAGE ↓
-![about](https://user-images.githubusercontent.com/100978682/164456225-3bbf55a7-2bf7-4d5c-a96d-8d0973b08155.jpg)
+![about](https://user-images.githubusercontent.com/100978682/164457175-0ab50931-9400-4e90-9234-c19425a88b2b.jpg)
 CAREERS PAGE ↓
 ![careers](https://user-images.githubusercontent.com/100978682/164456286-b2a4bed5-5ac6-43e8-8ad9-057b85c5bb2e.jpg)
 BLOG PAGE ↓
