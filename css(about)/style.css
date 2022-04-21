@@ -1,0 +1,71 @@
+/* BODY */
+body {
+  background-color: #000;
+}
+/* ABOUT STUFF */
+.section-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10rem;
+  padding-top: 135px;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.title {
+  font-size: 7.2rem;
+  margin-bottom: 3rem;
+}
+.text-part__2 {
+  font-size: 2.4rem;
+  max-width: 70%;
+  margin-bottom: -4rem;
+}
+.about-line {
+  background-color: #333;
+  border: none;
+  height: 1px;
+}
+.text-part__3 {
+  font-size: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4rem;
+}
+.text-part__3 p:nth-child(1) {
+  margin: -3rem 0 0 0;
+}
+.text-part__3 p:nth-child(6) {
+  max-width: 85%;
+}
+.solder-link a:link,
+.solder-link a:visited {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.solder-link a:hover,
+.solder-link a:active {
+  text-decoration: underline;
+}
+/* BG STUFF */
+.main-bg {
+  width: 40%;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+.section-about {
+  padding-bottom: 10rem;
+}

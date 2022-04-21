@@ -1,0 +1,368 @@
+:root {
+  --body_font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* #################################### */
+/* HEADER */
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 99999999;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+}
+.header-main,
+.logo-link:link,
+.nav-box,
+.sign-box,
+.theme-boxicle {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.45rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* #### */
+/* header logo */
+.logo-main {
+  width: 4rem;
+  height: 4rem;
+}
+.logo-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.6rem;
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.logo-link:link {
+  gap: 1rem;
+}
+/* #### */
+/* header navigation */
+.nav-box {
+  gap: 4rem;
+  padding-left: 16rem;
+}
+.nav-box a:link,
+.nav-box a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.44rem;
+  -webkit-transition: all 0.16s;
+  -o-transition: all 0.16s;
+  transition: all 0.16s;
+}
+.nav-box a:hover,
+.nav-box a:active {
+  color: #7f7dd3;
+}
+.careers {
+  position: relative;
+}
+.career-count {
+  position: absolute;
+  right: -2rem;
+  top: -0.8rem;
+  background-color: #4c4acf;
+  padding: 0.05rem 0.4rem;
+  color: #908fd3;
+  border-radius: 5px;
+}
+/* #### */
+/* header sign-in */
+.sign-box {
+  gap: 2.3rem;
+}
+/* nav sign is for mobile */
+.sign-box a:link,
+.nav-sign:link,
+.sign-box a:visited,
+.nav-sign:visited {
+  color: #fff;
+  background-color: #4c4acf;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.sign-box a:hover,
+.nav-sign:hover,
+.sign-box a:active,
+.nav-sign:active {
+  background-color: #3e3cc5;
+}
+.nav-sign:link {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: none;
+}
+.colored-sign {
+  padding: 0.6rem 1.55rem;
+  border-radius: 3.5rem;
+}
+.colorless-sign {
+  background-color: transparent !important;
+  font-size: 1.39rem !important;
+}
+/* header mobile navigation */
+.mobile-nav__box {
+  display: none;
+}
+.menu-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+.navigation-mobile {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  top: 8rem;
+  left: 0;
+  padding: 7rem 11rem 50% 10rem !important;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #000;
+}
+.navigation-mobile a {
+  font-size: 3rem !important;
+  margin-bottom: 2rem;
+}
+.bottom-mobile__nav {
+  text-align: center;
+  width: 100%;
+}
+.mobile-span {
+  color: #333;
+  font-size: 1.5rem;
+  display: none;
+}
+/* ############################################################################# */
+/* header theme switcher */
+/* ############################################################################# */
+.theme-boxicle {
+  gap: 1.7rem;
+  background-color: #1a1d1c;
+  padding: 1rem;
+  border-radius: 35px;
+  position: relative;
+}
+.theme-purple,
+.theme-red {
+  width: 1.17rem;
+  height: 1.17rem;
+  display: inline-block;
+  border-radius: 100%;
+  z-index: 9999;
+  border: none;
+  cursor: pointer;
+}
+.theme-purple {
+  background-color: #4c4acf;
+}
+.theme-red {
+  background-color: #ed4b3c;
+}
+.outline-theme {
+  outline: 1px solid #888;
+  outline-offset: 4px;
+}
+/* ############################################################################# */
+/* ILLUSTRATION 9 PREFOOTER*/
+/* ############################################################################# */
+.section-illustration.prefooter {
+  background: url(/img/prefooter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 75%;
+  padding: 0;
+}
+.lst-logo-image {
+  width: 100%;
+  height: 100%;
+  -ms-grid-column-align: start;
+  justify-self: start;
+}
+.heading-main.prefooter {
+  font-size: 7.2rem;
+  text-align: start;
+  line-height: 1.25;
+  font-weight: 400;
+}
+.paragraph.prefooter {
+  text-align: start;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.ilst-text__9 {
+  max-width: 50rem;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hero-email {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+}
+.hero-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.input-email,
+.email-button {
+  padding: 1.2rem 3rem;
+  font-size: 1.5rem;
+  background-color: #242527;
+  border: none;
+  border-radius: 30px;
+}
+.input-email::-webkit-input-placeholder {
+  color: #888;
+  -webkit-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+}
+.input-email::-moz-placeholder {
+  color: #888;
+  transform: translateX(-1.5rem);
+}
+.input-email:-ms-input-placeholder {
+  color: #888;
+  -ms-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+}
+.input-email::-ms-input-placeholder {
+  color: #888;
+  -ms-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+}
+.input-email::placeholder {
+  color: #888;
+  -webkit-transform: translateX(-1.5rem);
+  -ms-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+}
+.input-email:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #4c4acf;
+  box-shadow: 0 0 0 2px #4c4acf;
+}
+.email-button {
+  padding: 1.1rem 4rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4c4acf;
+  font-weight: 700;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.email-button:hover {
+  background-color: #3e3cc5;
+}
+/* ############################################################################# */
+/* FOOOTER*/
+/* ############################################################################# */
+.footer {
+  background-color: #111;
+}
+.footer-main {
+  padding: 4rem 0 6rem;
+}
+.footer-text {
+  color: #888;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1.6rem;
+}
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.footer-links a:link,
+.footer-links a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-links a:hover,
+.footer-links a:active {
+  color: #eee;
+}
+.logo-link.footer {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+.footer-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-transform: translateY(-2rem);
+  -ms-transform: translateY(-2rem);
+  transform: translateY(-2rem);
+}
+.footer-l {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer-links.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
