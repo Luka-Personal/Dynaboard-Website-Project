@@ -25,5 +25,5 @@ PRICING PAGE ↓
 ![pricing](https://user-images.githubusercontent.com/100978682/164456362-fc9fafa2-6cb5-42fd-853c-3a97e99acde6.jpg)
 
 
-
+LINK: https://dynaboard-replica.netlify.app/
 
