@@ -7,7 +7,7 @@ P.S my js is still a bit of a mess, learning it on Udemy atm
 
 Date Finished 4/21/2022 - Слава Украине!
 
-Created by - Luka Tsinaridze and bit of google :)))
+Created by - Luka Tsinaridze, Languages used - Vanilla Javascript, HTML, CSS
 
 W E B S I T E -- P H O T O S
 
