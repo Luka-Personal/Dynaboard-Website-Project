@@ -1,6 +1,3 @@
-body {
-  overflow-x: hidden;
-}
 .section-features {
   background-color: #111;
   padding: 10rem 0;
@@ -34,6 +31,7 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   height: 85rem;
+  width: 100%;
   -webkit-animation: fade-in__general 0.5s;
   animation: fade-in__general 0.5s;
 }
