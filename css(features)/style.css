@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .section-features {
   background-color: #111;
   padding: 10rem 0;
@@ -135,31 +138,8 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: -o-linear-gradient(#171717 0 0) padding-box,
-    -o-linear-gradient(
-        45deg,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet,
-        red
-      ) border-box;
-  background: linear-gradient(#171717 0 0) padding-box,
-    linear-gradient(
-        45deg,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet,
-        red
-      )
-      border-box;
+  background: -o-linear-gradient(#171717 0 0) padding-box, -o-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red) border-box;
+  background: linear-gradient(#171717 0 0) padding-box, linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red) border-box;
   color: #313149;
   border: 0.2rem solid transparent;
 }
