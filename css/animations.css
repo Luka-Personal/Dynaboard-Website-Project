@@ -727,16 +727,6 @@
   }
 }
 /* PREFOOTER LOGO */
-@-webkit-keyframes prefooter-logo {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1) rotateY(35deg);
-    transform: scale(1.1) rotateY(35deg);
-  }
-}
 @keyframes prefooter-logo {
   0% {
     -webkit-transform: scale(1);
