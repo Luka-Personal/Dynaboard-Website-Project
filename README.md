@@ -5,7 +5,7 @@ else was 100% made and coded by me, atm can't figure out how to save theme state
 
 P.S my js is still a bit of a mess, learning it on Udemy atm
 
-Date Finished 4/21/2022 - Слава Украине!
+Date Finished 4/21/2022 - Слава Україні!
 
 Created by - Luka Tsinaridze, Languages used - Vanilla Javascript, HTML, CSS
 
