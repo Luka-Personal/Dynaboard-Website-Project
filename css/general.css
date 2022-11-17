@@ -92,7 +92,7 @@ body {
 }
 /* PARAGRAPH */
 .paragraph {
-  color: #4c4acf;
+  color: var(--main-color);
   font-weight: 800;
   font-size: 2.4rem;
   text-align: center;
@@ -146,7 +146,7 @@ body {
   width: fit-content;
   margin-top: 7rem;
   padding: 0.8rem 3.2rem;
-  border: 1px solid #4c4acf;
+  border: 1px solid var(--main-color);
   border-radius: 30px;
   font-size: 1.5rem;
   text-decoration: none;
@@ -158,7 +158,7 @@ body {
 }
 .see-more__reus:hover,
 .see-more__reus:active {
-  background-color: #4c4acf;
+  background-color: var(--secondary-color);
 }
 /* GRIDS */
 .grid {
@@ -256,23 +256,9 @@ body {
 .bg1,
 .bg3,
 .bg4 {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgb(56, 3, 170)),
-    to(rgb(105, 103, 226))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgb(56, 3, 170) 0%,
-    rgb(105, 103, 226) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgb(56, 3, 170) 0%,
-    rgb(105, 103, 226) 100%
-  );
+  background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--secondary-color)));
+  background: -o-linear-gradient(left, var(--main-color) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(90deg, var(--main-color) 0%, var(--secondary-color) 100%);
   max-width: 474px;
   width: 100%;
   height: 62.8rem;
@@ -293,3 +279,4 @@ body {
   width: 100%;
   height: 100%;
 }
+/* theme */
