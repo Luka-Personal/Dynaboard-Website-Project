@@ -55,17 +55,19 @@ const changeColor = function (...array) {
     root.style.setProperty(`${selector}`, `${color}`);
   }
 };
-const switchFilter = function (hueDeg) {
+const switchFilter = function (hueDeg, hueDegProperty) {
+  //  --filter-color: 0deg;
   switchThemeFilter.forEach((el) => (el.style.filter = `hue-rotate(${hueDeg}deg)`));
+  root.style.setProperty(`${hueDegProperty[1]}`, `${hueDegProperty[0]}deg`);
 };
 
 const changeTheme = function (color) {
   if (color === `red`) {
-    switchFilter(-250);
+    switchFilter(-250, [-250, `--filter-color`]);
     changeColor([`#ed4b3c`, `--main-color`], [`#f16f63`, `--secondary-color`], [`#f4938a`, `--secondary-color__light`], [`#77261e`, `--thirdiary-color__dark`]);
   }
   if (color === `purple`) {
-    switchFilter(0);
+    switchFilter(0, [0, `--filter-color`]);
     changeColor([`#4c4acf`, `--main-color`], [`#3e3cc5`, `--secondary-color`], [`#7f7dd3`, `--secondary-color__light`], [`#4d4bcc56`, `--thirdiary-color__dark`]);
   }
 };
@@ -84,7 +86,7 @@ themeSelBox.forEach((box) => {
   box.addEventListener(`click`, function (e) {
     const colorPicker = e.target.closest(`.btn`);
     if (!colorPicker) return;
-    history.go(0);
+    history.go(0); // refresh page
     document.querySelectorAll(`.theme-boxicle .btn`).forEach((el) => el.classList.remove(`outline-theme`));
     colorPicker.classList.toggle(`outline-theme`);
     if (colorPicker.dataset.color === `red`) {
