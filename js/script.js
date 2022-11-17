@@ -84,6 +84,7 @@ themeSelBox.forEach((box) => {
   box.addEventListener(`click`, function (e) {
     const colorPicker = e.target.closest(`.btn`);
     if (!colorPicker) return;
+    history.go(0);
     document.querySelectorAll(`.theme-boxicle .btn`).forEach((el) => el.classList.remove(`outline-theme`));
     colorPicker.classList.toggle(`outline-theme`);
     if (colorPicker.dataset.color === `red`) {
