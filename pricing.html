@@ -15,21 +15,13 @@
     <link rel="stylesheet" href="css/animations.css" />
   </head>
   <body>
-    <img
-      src="/img/bg.svg"
-      alt="background about"
-      class="main-bg option-filter"
-    />
+    <img src="/img/bg.svg" alt="background about" class="main-bg theme-switch" />
     <header class="header">
       <div class="container-header">
         <div class="header-main">
           <div class="logo-box">
             <a href="index.html" class="logo-link">
-              <img
-                src="https://dynaboard.com/images/purple-logo.png"
-                alt="logo of Dynaboard"
-                class="logo-main option-filter"
-              />
+              <img src="https://dynaboard.com/images/purple-logo.png" alt="logo of Dynaboard" class="logo-main theme-switch" />
               <span class="logo-text">Dynaboard</span>
             </a>
           </div>
@@ -44,15 +36,13 @@
             <a href="pricing.html" class="mobile-nav__item">Pricing</a>
             <div class="bottom-mobile__nav">
               <a href="#" class="nav-sign option-filter">Sign in</a>
-              <span class="mobile-span">
-                ® Dynaboard 2022 - All Rights Reserved
-              </span>
+              <span class="mobile-span"> ® Dynaboard 2022 - All Rights Reserved </span>
             </div>
           </div>
           <div class="theme-box">
             <div class="theme-boxicle">
-              <button href="#" class="theme-purple outline-theme"></button>
-              <button href="#" class="theme-red"></button>
+              <button href="#" data-color="purple" class="btn theme-purple outline-theme"></button>
+              <button href="#" data-color="red" class="btn theme-red"></button>
             </div>
           </div>
           <div class="sign-box">
@@ -62,8 +52,8 @@
           <div class="mobile-nav__box">
             <div class="theme-box mobile">
               <div class="theme-boxicle">
-                <button href="#" class="theme-purple outline-theme"></button>
-                <button href="#" class="theme-red"></button>
+                <button href="#" data-color="purple" class="btn theme-purple outline-theme"></button>
+                <button href="#" data-color="red" class="btn theme-red"></button>
               </div>
             </div>
             <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
@@ -75,60 +65,37 @@
       <div class="container-secondary">
         <div class="pricing-title">
           <h2 class="heading-illustration pricing">A price for everyone</h2>
-          <p class="paragraph pricing">
-            Pay only for the resources you consume. No instances to manage.
-          </p>
+          <p class="paragraph pricing">Pay only for the resources you consume. No instances to manage.</p>
         </div>
         <div class="pricing-main">
           <div class="pricing first">
             <ul>
               <li>
-                <ion-icon
-                  name="navigate-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="navigate-outline" class="option-txt icon"></ion-icon>
                 <span>Collaborators</span>
               </li>
               <li>
-                <ion-icon
-                  name="people-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="people-outline" class="option-txt icon"></ion-icon>
                 <span>Viewers</span>
               </li>
               <li>
-                <ion-icon
-                  name="document-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="document-outline" class="option-txt icon"></ion-icon>
                 <span>Projects</span>
               </li>
               <li>
-                <ion-icon
-                  name="cube-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="cube-outline" class="option-txt icon"></ion-icon>
                 <span>Nodes & Resources</span>
               </li>
               <li>
-                <ion-icon
-                  name="desktop-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="desktop-outline" class="option-txt icon"></ion-icon>
                 <span>Server-side Compute</span>
               </li>
               <li>
-                <ion-icon
-                  name="information-circle-outline"
-                  class="option-txt"
-                ></ion-icon>
+                <ion-icon name="information-circle-outline" class="option-txt"></ion-icon>
                 <span>Database Storage</span>
               </li>
               <li>
-                <ion-icon
-                  name="cloud-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="cloud-outline" class="option-txt icon"></ion-icon>
                 <span>Object Storage</span>
               </li>
               <li>
@@ -136,10 +103,7 @@
                 <span>SSO</span>
               </li>
               <li>
-                <ion-icon
-                  name="lock-closed-outline"
-                  class="option-txt icon"
-                ></ion-icon>
+                <ion-icon name="lock-closed-outline" class="option-txt icon"></ion-icon>
                 <span>Custom Domains w/SSL</span>
               </li>
             </ul>
@@ -155,12 +119,8 @@
                   Unlimited
                   <span class="faded-text">(during Beta period)</span>
                 </li>
-                <li>
-                  Unlimited <span class="faded-text">(during Beta period)</span>
-                </li>
-                <li>
-                  Unlimited <span class="faded-text">(during Beta period)</span>
-                </li>
+                <li>Unlimited <span class="faded-text">(during Beta period)</span></li>
+                <li>Unlimited <span class="faded-text">(during Beta period)</span></li>
                 <li>All</li>
                 <li><span class="faded-text size-normal">Coming Soon</span></li>
                 <li><span class="faded-text size-normal">Coming Soon</span></li>
@@ -184,31 +144,15 @@
       <div class="container-prefooter">
         <div class="ilst-main-prefooter grid grid-prefooter">
           <div class="ilst-text__9">
-            <h1 class="heading-main prefooter">
-              Launch an app in one sitting.
-            </h1>
-            <p class="paragraph prefooter">
-              We're currently in a private beta period. Sign up for early access
-              and get an update when it's your turn.
-            </p>
+            <h1 class="heading-main prefooter">Launch an app in one sitting.</h1>
+            <p class="paragraph prefooter">We're currently in a private beta period. Sign up for early access and get an update when it's your turn.</p>
             <form action="#" class="hero-form prefooter">
-              <input
-                type="email"
-                placeholder="Work Email address"
-                required
-                class="input-email prefooter"
-              />
-              <button class="email-button prefooter option-filter">
-                Request Beta Access
-              </button>
+              <input type="email" placeholder="Work Email address" required class="input-email prefooter" />
+              <button class="email-button prefooter option-filter">Request Beta Access</button>
             </form>
           </div>
           <div class="prefooter-photo">
-            <img
-              alt="prefooter logo"
-              src="img/dynaboard-logo-3d.png"
-              class="lst-logo-image"
-            />
+            <img alt="prefooter logo" src="img/dynaboard-logo-3d.png" class="lst-logo-image" />
           </div>
         </div>
       </div>
@@ -218,11 +162,7 @@
         <div class="footer-main flex-footer">
           <div class="footer-l">
             <a href="#" class="logo-link footer">
-              <img
-                src="https://dynaboard.com/images/purple-logo.png"
-                alt="logo of Dynaboard"
-                class="logo-main option-filter"
-              />
+              <img src="https://dynaboard.com/images/purple-logo.png" alt="logo of Dynaboard" class="logo-main theme-switch" />
               <span class="logo-text">Dynaboard</span>
             </a>
             <div class="footer-text">
@@ -256,25 +196,15 @@
             <div class="footer-links column">
               <a href="#">Feeds</a>
               <a href="#">Blog</a>
-              <a href="#" class="footer-icon"
-                ><ion-icon name="logo-twitter"></ion-icon>@dynaboard</a
-              >
-              <a href="#" class="footer-icon"
-                ><ion-icon name="logo-github"></ion-icon>@dynaboard</a
-              >
+              <a href="#" class="footer-icon"><ion-icon name="logo-twitter"></ion-icon>@dynaboard</a>
+              <a href="#" class="footer-icon"><ion-icon name="logo-github"></ion-icon>@dynaboard</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

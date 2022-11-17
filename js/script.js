@@ -13,23 +13,23 @@ const navICON = document.querySelector(".menu-icon");
 const navSIGN = document.querySelectorAll(".nav-sign, .mobile-span");
 const navITEM = document.querySelectorAll(".mobile-nav__item, .nav-sign");
 
-// navICON.addEventListener("click", function () {
-//   navBOX.classList.toggle("navigation-mobile");
+navICON.addEventListener("click", function () {
+  navBOX.classList.toggle("navigation-mobile");
 
-//   document.body.classList.toggle("hidden");
-//   for (const navSIGNN of navSIGN) {
-//     navSIGNN.classList.toggle("display-hide--unhide");
-//   }
-// });
-// for (const navITEMM of navITEM) {
-//   navITEMM.addEventListener("click", function () {
-//     navBOX.classList.remove("navigation-mobile");
-//     document.body.classList.remove("hidden");
-//     for (const navSIGNN of navSIGN) {
-//       navSIGNN.classList.remove("display-hide--unhide");
-//     }
-//   });
-// }
+  document.body.classList.toggle("hidden");
+  for (const navSIGNN of navSIGN) {
+    navSIGNN.classList.toggle("display-hide--unhide");
+  }
+});
+for (const navITEMM of navITEM) {
+  navITEMM.addEventListener("click", function () {
+    navBOX.classList.remove("navigation-mobile");
+    document.body.classList.remove("hidden");
+    for (const navSIGNN of navSIGN) {
+      navSIGNN.classList.remove("display-hide--unhide");
+    }
+  });
+}
 const textCAROUSEL = document.querySelector(".paragraph.main.js");
 const example = ["Build a partner portal - in one sitting.", "Build a GDPR-comp - in one sitting.", "Build a website - in one sitting.", "Build a MVP | in one sitting."];
 
@@ -46,8 +46,9 @@ function textSequence(i) {
 }
 // new
 const root = document.querySelector(":root");
-const themeSelBox = document.querySelector(`.theme-boxicle`);
+const themeSelBox = document.querySelectorAll(`.theme-boxicle`);
 const switchThemeFilter = document.querySelectorAll(`.theme-switch`);
+const allThemeBtns = document.querySelectorAll(`.theme-boxicle .btn`);
 
 const changeColor = function (...array) {
   for (const [color, selector] of array.values()) {
@@ -57,19 +58,41 @@ const changeColor = function (...array) {
 const switchFilter = function (hueDeg) {
   switchThemeFilter.forEach((el) => (el.style.filter = `hue-rotate(${hueDeg}deg)`));
 };
-themeSelBox.addEventListener(`click`, function (e) {
-  console.log(e.target);
-  const colorPicker = e.target.closest(`.btn`);
-  console.log(colorPicker);
-  if (!colorPicker) return;
-  document.querySelectorAll(`.theme-boxicle .btn`).forEach((el) => el.classList.remove(`outline-theme`));
-  colorPicker.classList.toggle(`outline-theme`);
-  if (colorPicker.dataset.color === `red`) {
+
+const changeTheme = function (color) {
+  if (color === `red`) {
     switchFilter(-250);
     changeColor([`#ed4b3c`, `--main-color`], [`#f16f63`, `--secondary-color`], [`#f4938a`, `--secondary-color__light`], [`#77261e`, `--thirdiary-color__dark`]);
   }
-  if (colorPicker.dataset.color === `purple`) {
+  if (color === `purple`) {
     switchFilter(0);
     changeColor([`#4c4acf`, `--main-color`], [`#3e3cc5`, `--secondary-color`], [`#7f7dd3`, `--secondary-color__light`], [`#4d4bcc56`, `--thirdiary-color__dark`]);
   }
+};
+if (localStorage.getItem(`theme`) === `red`) {
+  changeTheme(`red`);
+  allThemeBtns.forEach((el) => el.classList.remove(`outline-theme`));
+  document.querySelectorAll(`.theme-red`).forEach((el) => el.classList.add(`outline-theme`));
+}
+if (localStorage.getItem(`theme`) === `purple`) {
+  changeTheme(`purple`);
+  allThemeBtns.forEach((el) => el.classList.remove(`outline-theme`));
+  document.querySelectorAll(`.theme-purple`).forEach((el) => el.classList.add(`outline-theme`));
+}
+
+themeSelBox.forEach((box) => {
+  box.addEventListener(`click`, function (e) {
+    const colorPicker = e.target.closest(`.btn`);
+    if (!colorPicker) return;
+    document.querySelectorAll(`.theme-boxicle .btn`).forEach((el) => el.classList.remove(`outline-theme`));
+    colorPicker.classList.toggle(`outline-theme`);
+    if (colorPicker.dataset.color === `red`) {
+      localStorage.setItem(`theme`, `red`);
+      changeTheme(`red`);
+    }
+    if (colorPicker.dataset.color === `purple`) {
+      localStorage.setItem(`theme`, `purple`);
+      changeTheme(`purple`);
+    }
+  });
 });

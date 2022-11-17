@@ -15,8 +15,8 @@
 }
 *:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 3px 5px #1411a4;
-  box-shadow: 0 0 3px 5px #1411a4;
+  -webkit-box-shadow: 0 0 3px 5px var(--secondary-color);
+  box-shadow: 0 0 3px 5px var(--secondary-color);
 }
 html {
   font-size: 62.5%;

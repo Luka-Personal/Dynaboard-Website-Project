@@ -1,3 +1,10 @@
+/* VARS */
+:root {
+  --main-color: #4c4acf;
+  --secondary-color: #3e3cc5;
+  --secondary-color__light: #7f7dd3;
+  --thirdiary-color__dark: #4d4bcc56;
+}
 .section-features {
   background-color: #111;
   padding: 10rem 0;
@@ -36,8 +43,8 @@
   animation: fade-in__general 0.5s;
 }
 .logo {
-  -webkit-filter: hue-rotate(250deg);
-  filter: hue-rotate(250deg);
+  /* -webkit-filter: hue-rotate(250deg);
+  filter: hue-rotate(250deg); */
 }
 .main-text {
   color: #fff;
@@ -60,7 +67,7 @@
   margin-top: 10rem;
 }
 .access-btn {
-  background-color: #4c4acf;
+  background-color: var(--main-color);
   border: none;
   color: #fff;
   font-size: 1.5rem;
@@ -77,12 +84,12 @@
   background-color: transparent;
 }
 .access-btn.solid:hover {
-  background-color: #3e3cc5;
+  background-color: var(--secondary-color);
 }
 .access-btn.trasparent:active,
 .access-btn.transparent:hover {
-  -webkit-box-shadow: 0 0 0 1px #3e3cc5;
-  box-shadow: 0 0 0 1px #3e3cc5;
+  -webkit-box-shadow: 0 0 0 1px var(--secondary-color);
+  box-shadow: 0 0 0 1px var(--secondary-color);
 }
 /* ### */
 .ilst-span__normal.features {
@@ -166,7 +173,7 @@
   gap: 1rem;
 }
 .border-paragraph {
-  color: #908fd3;
+  color: var(--secondary-color__light);
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 700;

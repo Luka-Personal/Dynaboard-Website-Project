@@ -43,7 +43,7 @@
   animation: fade-in__general 0.5s;
 }
 .icon {
-  color: #4c4acf;
+  color: var(--main-color);
   width: 2rem;
   height: 2rem;
 }
@@ -75,7 +75,7 @@
 }
 .get-updates,
 .contact-us {
-  background-color: #4c4acf;
+  background-color: var(--main-color);
   padding: 1.1rem 2.6rem;
   cursor: pointer;
   border-radius: 3.5rem;
@@ -121,7 +121,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border: 2px dashed #4c4acf;
+  border: 2px dashed var(--main-color);
   margin-left: -2rem;
 }
 .pricing-third__text {
@@ -137,7 +137,7 @@
   align-items: center;
 }
 .third-text {
-  color: #7f7dd3;
+  color: var(--secondary-color__light);
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 700;
